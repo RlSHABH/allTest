@@ -60,7 +60,5 @@ public class ExecutorClassExample {
         });
 
     System.out.println("Your BMI is - " + combinedFuture.get());
-
-
   }
 }
