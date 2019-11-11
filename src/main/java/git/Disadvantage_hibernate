@@ -1,0 +1,16 @@
+Lots of API to learn: A lot of effort is required to learn Hibernate. So, not very easy to learn hibernate easily.
+
+Debugging: Sometimes debugging and performance tuning becomes difficult.
+
+Slower than JDBC: Hibernate is slower than pure JDBC as it is generating lots of SQL statements in runtime.
+
+Not suitable for Batch processing: It advisable to use pure JDBC for batch processing.
+
+Not suitable for Small projects : For small project having few tables it is useless to work with hibernate.
+
+Does not allow multiple inserts : Hibernate does not allow some type of queries which are supported by JDBC. For example It does
+not allow to insert multiple objects (persistent data) to same table using single query. Developer
+has to write separate query to insert each object.
+
+Generates complex quires with many joins : For complex data, mapping from Object-to-tables and vise versa reduces performance and
+increases time of conversion. (query conversion)
