@@ -1,0 +1,6 @@
+1. Truncate don't delete if foreign key constraint
+while delete will do if there is no reference present in foreign key table.
+
+2. Truncate doesn't save the primary key index while delete does.
+
+3. truncate is fast than delete.
