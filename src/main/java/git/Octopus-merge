@@ -1,0 +1,13 @@
+This may seem fine and might actually be the only way you would think about this if not for the Octopus merge.
+You have three merge commits here and as we know merge commits are noise.
+ They pollute the history of your repository and interrupt the story told by your Git history.
+  So, how about keeping the noise low by just having one Merge commit instead of three. How you ask?
+  Octopus, My friend. All hail the great and mighty Octopus.
+   So, the way you perform an Octopus is by merging all the branches at once on to the master. To do that you give a command like this
+
+Git merge octopus
+
+This will merge all the three branches to master.
+The branches will look something like this. Do you see the reference of Octopus now?
+
+command: git merge branch1  development
