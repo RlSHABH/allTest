@@ -19,6 +19,7 @@ public class first {
     StringBuffer ab=new StringBuffer();
    a.chars().distinct().forEach(x->ab.append((char)x));
   System.out.println(ab.toString());
+      System.out.println(ab.toString());
 
   }
 
