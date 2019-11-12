@@ -6,6 +6,7 @@ public class User {
 
   private String userName;
 
+
   public String getUserName() {
     return userName;
   }
@@ -21,4 +22,6 @@ public class User {
   public void setUserId(Long userId) {
     this.userId = userId;
   }
+
+
 }

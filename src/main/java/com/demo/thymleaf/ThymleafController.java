@@ -1,12 +1,12 @@
 package com.demo.thymleaf;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class ThymleafController {
 
   @RequestMapping(value = "/showForm", method= RequestMethod.GET)
@@ -17,7 +17,7 @@ public class ThymleafController {
     user.setUserName("Rishabh");
 
     model.addAttribute("user", user);
-    return model.toString();
+    return "User";
   }
 
   @RequestMapping(value = "/processForm", method=RequestMethod.POST)

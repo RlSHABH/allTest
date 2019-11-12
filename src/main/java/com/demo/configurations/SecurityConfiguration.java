@@ -1,3 +1,4 @@
+/*
 package com.demo.configurations;
 
 import com.demo.configurations.AuthorizationFilter;
@@ -22,3 +23,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .addFilter(new AuthorizationFilter());
   }
 }
+*/

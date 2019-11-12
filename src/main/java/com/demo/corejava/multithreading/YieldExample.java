@@ -1,4 +1,4 @@
-package multithreading;
+package com.demo.corejava.multithreading;
 
 public class YieldExample {
 
