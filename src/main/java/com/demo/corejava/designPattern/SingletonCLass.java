@@ -1,4 +1,4 @@
-package designPattern;
+package com.demo.corejava.designPattern;
 
 import java.io.Serializable;
 
@@ -42,7 +42,7 @@ public class SingletonCLass implements Serializable ,Cloneable {
 
 }
 
- enum SingletonEnum implements Serializable{
+  enum SingletonEnum implements Serializable{
      INSTANCE("rishabh");
 
      private  String name;

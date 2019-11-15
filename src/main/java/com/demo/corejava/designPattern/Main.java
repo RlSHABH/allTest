@@ -1,6 +1,6 @@
-package designPattern;
+package com.demo.corejava.designPattern;
 
-import designPattern.SingletonCLass;
+
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -31,7 +31,7 @@ public class Main {
 
             // Singleton ENum
 
-            SingletonEnum singleton = SingletonEnum.INSTANCE;
+           SingletonEnum singleton = SingletonEnum.INSTANCE;
             System.out.println(singleton);
 
 
