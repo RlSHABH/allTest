@@ -22,6 +22,8 @@ public class HibernateExample<T> {
     @Autowired
     private EntityManagerFactory entityManagerFactory;
 
+    @Autowired EmployeeRepository employeeRepository;
+
 
     public SessionFactory getSessionFactory() {
         return entityManagerFactory.unwrap(SessionFactory.class);
@@ -39,8 +41,9 @@ public class HibernateExample<T> {
         EmployeeModel employeeModel=new EmployeeModel();
         employeeModel.setEmpName("rishabh");
         employeeModel.setAddress(addressList);
+        employeeRepository.save(employeeModel);
 
-        Session session=getSessionFactory().openSession();
+       /* Session session=getSessionFactory().openSession();
         Transaction t=session.beginTransaction();
 
         session.save(employeeModel);
@@ -58,7 +61,7 @@ public class HibernateExample<T> {
         Integer id = (Integer) session1.save(employeeModel1);
         System.out.println("1. Employee save called without transaction, id="+id);
         //session1.flush(); //address will not get saved without this
-        System.out.println("*****");
+        System.out.println("*****");*/
 
 
 

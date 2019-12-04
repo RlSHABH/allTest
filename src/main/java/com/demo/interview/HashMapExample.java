@@ -13,6 +13,7 @@ public class HashMapExample {
     System.out.println(m.containsKey(user));// True
     // equals method will  be called because o1==o2 is not true .
     System.out.println(m.containsKey(new User(1, "bajpai")));// true
+    System.out.println(m.containsValue("bajpai"));
  }
 }
 
